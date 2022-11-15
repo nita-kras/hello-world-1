@@ -8,8 +8,16 @@ describe('empty spec', () => {
     .contains('Hello World!', { matchCase: false })
   })
 
-  it('displays Click button', () => {
-    cy.get('button')
-    .contains('Clicks');
+  it('question answers', () =>{
+    cy.get('h2')
+    .contains('can you update a CSV file? - yes ', {matchCase: false})
+  }) 
+
+  it('a1', () => {
+    ct.get('h3') 
+    .contains('What database support is available? - Fauna', {matchCase: false})
   })
+  
+ 
+  
 })
