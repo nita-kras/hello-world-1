@@ -18,6 +18,10 @@ describe('empty spec', () => {
     .contains('What database support is available? - Fauna', {matchCase: false})
   })
   
+  it('displays Click button', () => {
+    cy.get('button')
+    .contains('Clicks');
+  })
  
   
 })
